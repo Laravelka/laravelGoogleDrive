@@ -1,0 +1,6 @@
+i.bi.bi-cloud-upload.custom::before {
+	top: 2px!important;
+	font-size: 20px!important;
+	color: var(--primary)!important;
+	position: relative!important;
+}
