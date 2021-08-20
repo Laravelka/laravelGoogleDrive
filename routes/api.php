@@ -15,11 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:api')->group(function() {
-	Route::get('/user', function(Request $request) {
-		return $request->user();
-	});
-	Route::post('/token/update', 'ApiTokenController@update');
-
+	Route::get('/auth/user', 'Api\AuthController@getUser');
 	Route::prefix('files')->group(function() {
 		Route::get('getAll', 'Api\FilesController@getAll');
 		Route::post('upload', 'Api\FilesController@upload');
@@ -27,3 +23,5 @@ Route::middleware('auth:api')->group(function() {
 });
 
 
+Route::post('/auth/login', 'Api\AuthController@login');
+Route::post('/auth/register', 'Api\AuthController@register');

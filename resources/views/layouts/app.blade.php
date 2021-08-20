@@ -13,6 +13,7 @@
 	<script>
 		window.baseUrl = '{{ config('app.url') }}';
 		window.token = '{{ Auth::user() ? Auth::user()->api_token : null }}';
+		// eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGUxNWQwMzk3MWNiODczYTY1MDIxMTEwNTM1MTkyYjg0YmE4MDFmY2ZjNmExYWIzNzEyZTc1NDM0NzhmMzVkMzFhMGM5MzFjZDBjYjhiNmUiLCJpYXQiOjE2MTk4NzQ3MDcuMzg0NzY1LCJuYmYiOjE2MTk4NzQ3MDcuMzg0NzY1LCJleHAiOjE2NTE0MTA3MDcuMzE1NDI5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.z0-96uakfcaXBtImHZNNFZ2bFcRFYf_zkkF1rE2q1w1PhQ7WQC0WHuzz7jZKCa-LlkQSGHXXmuxnfgmZVVtfOQjCo2DL4Mk_SlbK7VM4ndb1b2I4G6VPwyB34bIAsCpsX_Q9U25Y1mNdMM-27mFdq-V8rNVe712Iy6M7e80_iNt2oHlkJyw6vwnaBzLG9HHd45iCpzJWjctddKkyX_jr_CvaMeb2r6Zdx_jdeLGRI4yIl7S-1dWAKxfdxqQScT4ymYrtV3V0ErG89TTe8OJrUaAiexaKHvmlAXJCBZ7vGkeNQe07reT0uPHvpvmmOM7Q8RlQLZ9MAoI1AHmi1ef3HLqEtsbrwM6XZUdES0h8feqALnuUAzzop6-5_tuy8SAvjr6pxug-1knMJ5FnZ08-NzblXKT7by2JBZ06VRaGHF2nSqyQ5JEmngUbJfcFf3U7FFepay93Bjfjgw8q1zpHKpymfQF3BN0qewR_9BwduL-_gnDAlSgbn5hJXT_BmvVYK1dOcTQes8Xhw14uhlvUin7zOSZr-6t7iDXdSRjrwpM3kp_v-JW5RgPmnOHf1egXbQtGf-l3mjRBh4_fig9T_BLPelYvrV4PtFJ57drHi6KKk89mubJ0-aMHx1iF11-niHd5EvWyraDhkQ8bhVW0TrnCNhVFXiGN9csf_T0JMh0
 	</script>
 	<script src="{{ mix('js/app.js') }}" defer></script>
 

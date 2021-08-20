@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
 	Route::get('/home', ['as' => 'home', 'uses' => 'Admin\HomeController@home'])
